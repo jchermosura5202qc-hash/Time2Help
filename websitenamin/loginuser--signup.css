@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FONT*/
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+/* HAMBURGER */
+
+/* LOGO */
+
+/* NAVIGATION */
+
+/*FORM ERROR*/
+
+.form-error {
+    color: #b42318;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.form-success {
+    color: #217a43;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* MAIN CONTENT */
+
+.back_box {
+    width: 90%;
+    margin: 40px auto 30px;
+    display: grid;
+    padding-bottom: 30px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    column-gap: 50px;
+    row-gap: 25px;
+
+    background-color: #F2EBD8;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* WELCOME*/
+
+.welcom {
+    grid-column: 1 / 3;
+    text-align: center;
+    padding: 10px;
+    font-size: 34px;
+}
+
+/*DIVIDER */
+
+.back_box > .divider {
+    grid-column: 1 / 3;
+    height: 55px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        #dedede,
+        #f5f5f5
+    );
+}
+
+.welcome_header {
+    padding-bottom: 50px;
+}
+
+/* SIGNUP FORM */
+
+.signform {
+    grid-column: 1;
+    grid-row: 3;
+
+    width: 100%;
+    max-width: 450px;
+    justify-self: center;
+
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.signform form {
+    width: 100%;
+}
+
+/* LOGIN FORM */
+
+.logform {
+    display: none;
+
+    grid-column: 1;
+    grid-row: 3;
+
+    width: 100%;
+    max-width: 450px;
+    justify-self: center;
+
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.logform form {
+    width: 100%;
+}
+
+/* INPUT FIELDS */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 38px;
+    padding: 10px;
+    border: 1px solid #DED8C9;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    outline: 1px solid #395442;
+}
+
+/* TERMS AND POLICY */
+
+.policy {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 15px 0 25px;
+    font-size: 15px;
+}
+
+.policy input {
+    margin: 0;
+    accent-color: #395442;
+}
+
+.policy a {
+    color: #111;
+}
+
+/* SIGNUP BUTTON */
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #395C2B;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #294521;
+    transform: scale(1.02);
+}
+
+/* OR DIVIDER */
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+    font-size: 15px;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #D8D1C1;
+}
+
+/* SOCIAL LOGIN */
+
+.social-login {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 0;
+}
+
+.social-login button {
+    flex: 1;
+    padding: 10px 5px;
+    background: transparent;
+    border: 1px solid #DED8C9;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.social-login button:hover {
+    background-color: #C9D8A5;
+    transform: scale(1.02);
+}
+
+.social-login img {
+    height: 30px;
+    width: 30px;
+}
+
+/* SOCIAL LOGIN BUTTONS */
+
+.social-login {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 0;
+}
+
+.social-btn {
+    flex: 1;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #DED8C9;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.social-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.social-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* SIGN IN */
+
+.signin {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin: 25px 0 20px;
+    padding: 0;
+
+    position: static;
+    clear: both;
+}
+
+.signin a {
+    color: #0a54e7;
+    text-decoration: none;
+}
+
+.signin a:hover {
+    transform: scale(1.02);
+    text-decoration: underline;
+}
+
+/*SIGN IN - FORGOT*/
+
+.forgot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin: 25px 0 20px;
+    padding: 0;
+}
+
+.forgot a {
+    text-decoration: none;
+}
+
+.sign-up {
+    color: #0a54e7;
+}
+
+.sign-up:hover {
+    text-decoration: underline;
+}
+
+.fpass {
+    color: black;
+}
+
+.fpass:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+/* RIGHT */
+
+.pic {
+    grid-column: 2;
+    grid-row: 3;
+
+    width: 100%;
+    min-height: auto;
+
+    background-image: url("your-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+    overflow: hidden;
+}
+
+.pic img {
+    border-radius: 27px;
+}
+
+/*FOOTER*/
+
+/* ABOUT US / CONTACTS / SUPPORT */
+
+/* LOGO CONTAINER */
+
+/*SOCIAL ICONS*/
+
+/* FOOTER RESPONSIVE */
+
+@media (max-width: 768px) {
+    .back_box {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .welcom,
+    .back_box > .divider,
+    .logform,
+    .pic {
+        grid-column: 1;
+    }
+
+    .welcom {
+        grid-row: 1;
+        font-size: 18px;
+    }
+
+    .back_box > .divider {
+        grid-row: 2;
+        height: 25px;
+    }
+
+    .logform {
+        grid-row: 3;
+        padding: 20px;
+    }
+
+    .pic {
+        grid-row: 4;
+        min-height: 300px;
+    }
+}
+
+/*HUMBURGER MENU*/
+
+/* SIDEBAR PROFILE */
+
+.menu-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu-profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px 25px;
+}
+
+/* USER NAME */
+
+.menu-profile h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* USER ROLE */
+
+.menu-profile p {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+/* CLOSE BUTTON */
+
+.close-menu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: transparent;
+    border: none;
+    color: #000000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-box {
+  border-top: none;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.menu-box svg {
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 33px 15px;
+}
+
+.menu-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-height: 42px;
+    padding: 0 15px;
+    border: 1px solid #395442;
+    border-radius: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.menu-links a {
+    transition: transform 0.3s ease;
+}
+
+.menu-links a:hover {
+    background-color: #D2D69C;
+    transform: translateY(-6px);
+}
+
+.side-menu {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 290px;
+    height: 100%;
+    background-color: #C9D9A5;
+    z-index: 1001;
+    border-radius: 0 25px 25px 0;
+    box-sizing: border-box;
+
+    /* Hide menu outside the left side */
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
+.side-menu.active {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}

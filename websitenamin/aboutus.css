@@ -1,0 +1,213 @@
+/*FONT*/
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+/* HAMBURGER */
+
+/* LOGO */
+
+/* NAVIGATION */
+
+/* ABOUT US INTRODUCTION */
+
+.about-intro {
+    width: 90%;
+    margin: 24px auto 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding-top: 6%;
+}
+
+/* LEFT SIDE: HEADING AND PARAGRAPH */
+
+.about-text {
+    width: 40%;
+}
+
+.about-text h1 {
+    font-size: 55px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.about-text p {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+}
+
+/* RIGHT SIDE: IMAGE */
+
+.about-image {
+    width: 60%;
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* MISSION AND VISION SECTION */
+
+.mission-vision {
+    width: 90%;
+    margin: 13px auto 30px;
+    display: flex;
+    gap: 20px;
+}
+
+/* BOTH CARDS */
+
+.mission-card,
+.vision-card {
+    flex: 1;
+    min-width: 0;
+    height: 100px;
+    background-color: #879B74;
+    border-radius: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* TITLE AND ICON */
+
+.mission-title,
+.vision-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mission-title img,
+.vision-title img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.mission-title h2,
+.vision-title h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* LINE UNDER THE TITLE */
+
+.mission-card hr,
+.vision-card hr {
+    width: 60%;
+    margin: 3px 0;
+    border: none;
+    border-top: 1px solid #D2D6C9;
+}
+
+/* CARD DESCRIPTION */
+
+.mission-card p,
+.vision-card p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 3px 0 0;
+}
+
+/* FEEDBACK SECTION */
+
+.feedback-section {
+    width: 90%;
+    margin: 35px auto;
+}
+
+.feedback-section > h2 {
+    text-align: left;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+/* FEEDBACK CARDS CONTAINER */
+
+.feedback-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* INDIVIDUAL FEEDBACK CARD */
+
+.feedback-card {
+    flex: 1;
+    min-width: 0;
+    background-color: #879B74;
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* PROFILE IMAGE AND INFORMATION */
+
+.feedback-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feedback-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h3 {
+    font-size: 16px;
+    margin: 0 0 4px;
+    font-weight: 600;
+}
+
+.profile-info p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* STAR RATING */
+
+.feedback-stars {
+    color: #F2D35E;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 15px 0 10px;
+}
+
+/* FEEDBACK TEXT */
+
+.feedback-message {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/*FOOTER*/
+
+/* ABOUT US / CONTACTS / SUPPORT */
+
+/* LOGO CONTAINER */
+
+/*SOCIAL ICONS*/
+
+/* FOOTER RESPONSIVE */

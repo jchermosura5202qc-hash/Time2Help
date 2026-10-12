@@ -1,0 +1,216 @@
+.login-page, .login-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* LOGIN LAYOUT */
+
+.login-page {
+    display: flex;
+    width: 100%;
+    min-height: 700px;
+    margin: 0;
+    padding: 0;
+}
+
+/* LEFT SIDE */
+
+.form-box {
+    width: 50%;
+    flex: 0 0 50%;
+    padding: 60px 10%;
+    background-color: #F2EBD8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box form {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* LOGO */
+
+.form-box h1 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin: 0 0 35px;
+}
+
+/* WELCOME TEXT */
+
+.form-box h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+/* INPUT FIELDS */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 38px;
+    padding: 10px;
+    border: 1px solid #DED8C9;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #395442;
+}
+
+/* TERMS AND POLICY */
+
+.policy {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 15px 0 25px;
+    font-size: 11px;
+}
+
+.policy input {
+    margin: 0;
+    accent-color: #395442;
+}
+
+.policy a {
+    color: #111;
+}
+
+/* LOGIN BUTTON */
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #395C2B;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+/* OR DIVIDER */
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 11px;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #D8D1C1;
+}
+
+/* GOOGLE AND APPLE BUTTONS */
+
+.social-login {
+    display: flex;
+    gap: 12px;
+}
+
+.social-login button {
+    flex: 1;
+    padding: 10px 5px;
+    background: transparent;
+    border: 1px solid #DED8C9;
+    border-radius: 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+/* FORGOT PASSWORD */
+
+.forgot {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.forgot a {
+    color: #111;
+    text-decoration: none;
+}
+
+/* RIGHT SIDE IMAGE */
+
+.login-image {
+    width: 50%;
+    flex: 0 0 50%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.login-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    .login-page {
+        flex-direction: column;
+    }
+
+    .form-box {
+        width: 100%;
+        padding: 45px 8%;
+    }
+
+    .login-image {
+        width: 100%;
+        min-height: 300px;
+        order: -1;
+    }
+}
+
+@media (max-width: 400px) {
+    .social-login {
+        flex-direction: column;
+    }
+}
+
+/*FOOTER*/
+
+/* ABOUT US / CONTACTS / SUPPORT */
+
+/* LOGO CONTAINER */
+
+/*SOCIAL ICONS*/
+
+/* FOOTER RESPONSIVE */

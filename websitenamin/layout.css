@@ -1,0 +1,240 @@
+/* TIME2HELP shared layout: header, footer (used by includes/header.php + footer.php) */
+/*FONT*/
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 100px !important;
+    min-height: 100px;
+    box-sizing: border-box;
+
+    background-color: #395442;
+
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* HAMBURGER */
+.hamburger {
+    width: 25px;
+    margin-right: 22px;
+    padding-left: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    display: block;
+}
+
+/* LOGO */
+.logo {
+    color: #fefcfc;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+
+    padding-left: 2%;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+/* NAVIGATION */
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+    padding-right: 30px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #D2D69C;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+/*FOOTER*/
+.footer {
+    width: 100%;
+    min-height: 350px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    background-color: #395442;
+    color: white;
+
+    padding: 40px;
+    box-sizing: border-box;
+
+    gap: 30px;
+
+    position: relative;
+}
+
+
+/* ABOUT US / CONTACTS / SUPPORT */
+.Finfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.CONTACT{
+    padding-left: 8%;
+}
+
+.footer .divider {
+    width: 100px;
+    border: none;
+    border-top: 1px solid white;
+
+    margin: 8px 0 16px 0;
+}
+
+
+/* LOGO CONTAINER */
+.Flogo {
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.F2logo {
+    margin: 0;
+
+    opacity: 30%;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #D2D69C;
+    transition: 0.5s;
+}
+
+/*SOCIAL ICONS*/
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons img:hover {
+    transform: translateY(-2px);
+}
+
+.footer-line {
+    position: absolute;
+
+    left: 40px;
+    right: 40px;
+    bottom: 25px;
+
+    padding-bottom: 25px;
+    border-top: 1px solid white;
+}
+
+/* FOOTER RESPONSIVE */
+@media (max-width: 768px) {
+    .footer {
+        flex-wrap: wrap;
+        padding: 30px 20px 60px;
+        gap: 30px;
+    }
+
+    .ABOUTUS,
+    .Finfo {
+        flex: 1 1 40%;
+        padding-left: 0;
+    }
+
+    .Flogo {
+        flex: 1 1 100%;
+        justify-content: flex-start;
+    }
+
+    .F2logo {
+        font-size: 2rem;
+    }
+
+    .footer-line {
+        left: 20px;
+        right: 20px;
+    }
+}

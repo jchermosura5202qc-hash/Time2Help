@@ -1,0 +1,199 @@
+/*FONT*/
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+/* HAMBURGER */
+
+/* LOGO */
+
+/* NAVIGATION */
+
+/* NEWS SECTION */
+
+.news-section {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+
+
+/* NEWS HEADING */
+
+.news-heading {
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.news-heading h1 {
+    font-size: 32px;
+    margin: 0 0 12px;
+    color: #395442;
+}
+
+/*POST-COLUMN*/
+
+.post-boxes {
+    display: flex;
+    padding: 10px;
+    gap: 25px;
+    margin: 13px auto 30px;
+}
+
+.post-column {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 15px;
+    height: 30%;
+    background-color: #C6D94C;
+    border-radius: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.post-column {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.post-column:hover {
+    transform: translateY(-6px);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.profile h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.profile small {
+    font-size: 14px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ppost {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.post-column h3 {
+    padding-left: 15px;
+    margin: 1;
+}
+
+/*COMMUNITY EVENTS*/
+
+.events {
+    display: flex;
+    gap: 25px;
+    margin: 20px 0 40px;
+}
+
+.event-pic,
+.event-pic1 {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-pic img,
+.event-pic1 img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.event-info {
+    padding: 20px;
+}
+
+.event-info h2 {
+    color: #395442;
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.event-date {
+    color: #879B74;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.event-info p {
+    line-height: 1.6;
+}
+
+.event-info a {
+    display: inline-block;
+    background-color: #395442;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.event-pic, 
+.event-pic1 {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.event-pic:hover {
+    transform: translateY(-6px);
+}
+
+.event-pic1:hover {
+    transform: translateY(-6px);
+}
+
+.event-info a:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+    background-color: #879B74;
+}
+
+/*FOOTER*/
+
+/* ABOUT US / CONTACTS / SUPPORT */
+
+/* LOGO CONTAINER */
+
+/*SOCIAL ICONS*/
+
+/* FOOTER RESPONSIVE */

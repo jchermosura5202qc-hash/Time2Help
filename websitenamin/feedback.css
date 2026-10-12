@@ -1,0 +1,226 @@
+/*FONT*/
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+/* HAMBURGER */
+
+/* LOGO */
+
+/* NAVIGATION */
+
+/* MAIN CONTENT */
+
+.feedback-section {
+    background-color: #f2ebd8;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback {
+    width: 100%;
+    max-width: 700px;
+    background-color: #FFFF;
+    padding: 45px 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.feedback h1 {
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+    margin: 0 0 55px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group>label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    margin: 0 0 10px 4px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    border: 1px solid #C9C9C2;
+    border-radius: 15px;
+    padding: 0 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.80);
+    box-sizing: border-box;
+}
+
+.input-wrapper:focus-within {
+    border-color: #395442;
+}
+
+.input-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #879B74;
+    border-radius: 50%;
+    color: #536b49;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.input-wrapper input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #333333;
+}
+
+.input-wrapper input::placeholder {
+    color: #A5A5A0;
+}
+
+.rating-section {
+    text-align: center;
+    margin: 32px 0 45px;
+}
+
+.rating-section p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 18px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 10px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 42px;
+    color: #D1D1CA;
+    cursor: pointer;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating label:checked ~ label {
+    color: #D99A26;
+}
+
+.comment textarea {
+    display: block;
+    width: 100%;
+    height: 160px;
+    padding: 15px;
+    border: 1px solid #D2D2CB;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    resize: vertical;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.comment textarea:focus {
+    border-color: #395442;
+}
+
+.comment textarea::placeholder {
+    border-color: #A5A5A0;
+}
+
+.form-buttons {
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 7%;
+}
+
+.form-buttons button {
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.cancel-btn:hover {
+    color: #879b74;
+}
+
+.cancel-btn {
+    width: 250px;
+    padding: 17px 20px;
+    color: #ffffff;
+    background-color: #395442;
+    border-radius: 12px;
+    
+    transition: background-color 0.2;
+}
+
+.submit-btn {
+    width: 250px;
+    padding: 17px 20px;
+    color: #ffffff;
+    background-color: #395442;
+    border-radius: 12px;
+    
+    transition: background-color 0.2;
+}
+
+.submit-btn:hover {
+    background-color: #293F32;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: ~1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0,);
+    white-space: nowrap;
+    border: 0;
+}
+
+/*FOOTER*/
+
+/* ABOUT US / CONTACTS / SUPPORT */
+
+/* LOGO CONTAINER */
+
+/*SOCIAL ICONS*/
+
+/* FOOTER RESPONSIVE */

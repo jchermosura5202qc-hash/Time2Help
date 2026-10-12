@@ -1,0 +1,131 @@
+/*HUMBURGER MENU*/
+
+/* SIDEBAR PROFILE */
+.menu-profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu-profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px 25px;
+}
+
+/* USER NAME */
+.menu-profile h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* USER ROLE */
+.menu-profile p {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+/* CLOSE BUTTON */
+.close-menu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: transparent;
+    border: none;
+    color: #000000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.menu-box {
+  border-top: none;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.12);
+}
+.menu-box svg {
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 33px 15px;
+}
+
+.menu-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-height: 42px;
+    padding: 0 15px;
+    border: 1px solid #395442;
+    border-radius: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.menu-links a{
+    transition: transform 0.3s ease;
+}
+.menu-links a:hover {
+    background-color: #D2D69C;
+    transform: translateY(-6px);
+}
+
+
+
+.side-menu {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 290px;
+    height: 100%;
+    background-color: #C9D9A5;
+    z-index: 1001;
+    border-radius: 0 25px 25px 0;
+    box-sizing: border-box;
+
+    /* Hide menu outside the left side */
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
+.side-menu.active {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}

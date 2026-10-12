@@ -1,0 +1,143 @@
+/*FONT*/
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+/* HAMBURGER */
+
+/* LOGO */
+
+/* NAVIGATION */
+
+/* MAIN CONTENT */
+
+.content1 {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+
+    margin-top: 7%;
+
+    background-color: #879B74;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+.content1 h2 {
+    color: white;
+    font-size: 45px;
+    text-align: left;
+    margin-bottom: 20px;
+
+    padding: 0 50px;
+}
+
+.content1 p {
+    color: white;
+    font-size: 21px;
+    text-align: left;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.content1 {
+    transition: transform 0.3s ease;
+}
+
+.content1:hover {
+    transform: translateY(-6px);
+}
+
+/* CONTENT2 */
+
+.content2 {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.content_img {
+    width: 100%;
+}
+
+.content_img img {
+    display: block;
+    width: 95%;
+    height: 610px;
+    object-fit: cover;
+
+    margin: 0 auto;
+}
+
+/* DONATOR AND RECIPIENT */
+
+.fdr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.donator,
+.recipient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fdr a {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: #000000;
+    background-color: #C6D94C;
+}
+
+.fdr a:hover {
+    transform: scale(1.08);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+    .content_img img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .fdr {
+        width: 90%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fdr button {
+        width: 220px;
+    }
+}
+
+/*FOOTER*/
+
+/* ABOUT US / CONTACTS / SUPPORT */
+
+/* LOGO CONTAINER */
+
+/*SOCIAL ICONS*/
+
+/* FOOTER RESPONSIVE */

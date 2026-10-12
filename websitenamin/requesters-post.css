@@ -1,0 +1,86 @@
+/*FONT*/
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+/* HAMBURGER */
+
+/* LOGO */
+
+/* NAVIGATION */
+
+/*POST-HEADER*/
+
+.post-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+}
+
+.search, 
+.pc {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+    padding-right: 30px;
+}
+
+.pc {
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.pc a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.pc-button {
+    background-color: #C9D8A5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.pc a:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+/* MAIN CONTENT */
+
+.content1 {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+
+    margin-top: 7%;
+
+    background-color: #879B74;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+/*FOOTER*/
+
+/* ABOUT US / CONTACTS / SUPPORT */
+
+/* LOGO CONTAINER */
+
+/*SOCIAL ICONS*/
+
+/* FOOTER RESPONSIVE */
